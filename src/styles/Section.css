@@ -1,0 +1,38 @@
+.main-section {
+  background: linear-gradient(to right bottom, rgba(252, 104, 18, 0.507), rgba(252, 96, 69, 0.363)), url(../assets/main.jpg);
+  height: 80vh;
+  background-size: cover;
+  overflow: hidden;
+}
+.main-section .content {
+  margin: 12rem;
+  text-align: center;
+}
+.main-section .content h1 {
+  font-size: 4rem;
+  color: rgb(248, 248, 248);
+  text-shadow: 3px 3px 3px rgb(248, 248, 248);
+}
+.main-section .content button {
+  background: none;
+  padding: 10px 2rem;
+  border-radius: 20px;
+  color: rgb(248, 248, 248);
+  cursor: pointer;
+  font-weight: bolder;
+  border: 1px solid rgb(248, 248, 248);
+  font-size: 16px;
+  margin-top: 1rem;
+}
+.main-section .content button:hover {
+  transform: scale(140%);
+  transition: 1s ease-in-out;
+  color: rgb(0, 0, 0);
+  background-color: rgb(248, 248, 248);
+}
+.main-section .bottom-text {
+  margin-left: 1rem;
+}
+.main-section .bottom-text p {
+  color: rgb(248, 248, 248);
+}/*# sourceMappingURL=Section.css.map */

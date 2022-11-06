@@ -1,0 +1,49 @@
+.car {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(236, 95, 70);
+  position: relative;
+}
+.car .arrows {
+  cursor: pointer;
+  color: rgb(248, 248, 248);
+}
+.car .arrows .left {
+  position: absolute;
+  font-size: 50px;
+  top: 50%;
+  left: 1%;
+}
+.car .arrows .right {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  font-size: 50px;
+}
+
+.carousel {
+  opacity: 0;
+  transition-duration: 1s;
+}
+
+.carousel.active {
+  opacity: 1;
+  transition-duration: 1s;
+}
+
+.data-item {
+  color: rgb(248, 248, 248);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.data-item .texts {
+  margin-top: 1rem;
+}
+.data-item .texts p {
+  margin: 2rem;
+}
+.data-item img {
+  width: 40%;
+  margin-top: 1rem;
+}/*# sourceMappingURL=Carousel.css.map */

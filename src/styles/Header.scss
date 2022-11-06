@@ -1,0 +1,85 @@
+@import './colors';
+@import './mixins';
+@import './font';
+
+.header {
+    position: sticky;
+    top: 0;
+
+    nav {
+      @include flex-center;
+      justify-content: space-between;
+      height: 4rem;
+      background-color: $main-color;
+
+     .zeniko {
+        text-decoration: none;
+      }
+
+      .ul-items{
+        list-style: none;
+
+        .li-items {
+
+             a {
+                text-decoration: none;
+                color: $secondary-color;
+                margin: 1rem;
+                font-size: 16px;
+            }
+            .orange {
+                color: $orange-color;
+            }
+        }
+      }
+
+      .logo {
+        text-transform: uppercase;
+        margin-right: 3rem;
+        font-family: $font-roboto;
+      }
+
+      .right {
+        @include flex-center;
+
+        .search {
+            @include flex-center;
+      
+            margin-right: 5rem;
+
+            .search-icon {
+                color: $gray-color;
+                font-size: 20px;
+            }
+        }
+        .sch-btn {
+            background: none;
+            cursor: pointer;
+            border: none;
+
+        }
+      }
+      .right-buttons {
+        @include flex-center;
+        margin-right: 3rem;
+
+
+        button {
+             margin: 0 1rem;
+             background: none;
+             border: none;
+             cursor: pointer;
+
+             a {
+                text-decoration: none;
+                color: $gray-color;
+             }
+        }
+
+        .basket {
+            color: $basket-color;
+        }
+      }
+
+    }
+}
