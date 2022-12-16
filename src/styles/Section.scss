@@ -1,38 +1,70 @@
 @import './mixins';
 @import './colors';
 @import './buttons';
+@import './font';
 
 .main-section {
-    background: linear-gradient(to right bottom, rgba(252, 104, 18, 0.507),rgba(252, 96, 69, 0.363)), url(../assets/main.jpg);
-    height: 80vh;
+    margin-top: -100px;
+    // background: linear-gradient(to right bottom, rgba(252, 104, 18, 0.507),rgba(252, 96, 69, 0.363)), url(../assets/main.jpg);
+    height: 100vh;
     background-size: cover;
     overflow: hidden;
 
     .content {
-      
-        margin: 12rem;
-        text-align: center;
-        h1{
-            font-size: 4rem;
-            color: $main-color;
-            text-shadow: 3px 3px 3px $main-color;
 
-        }
-        button {
-         @include button;
-
-            &:hover{
-              @include hover;
-            }
-        }
-    }
-    .bottom-text {
-       
-        margin-left: 1rem;
-        p {
-            color: $main-color;
-        }
-    }
+    @include flex-center;
 
     
-}
+     .content-paragraph{
+     
+      margin-left: 4rem;
+      padding: 4rem;
+
+      h1{
+        font-size: $font-extraLarge;
+        color: $text-color;
+      }
+      p{
+        font-size: $font-medium;
+        color: $regular-text-color;
+      }
+      .button-design{
+        background-color: $secondary-color;
+         margin-top: 2rem;
+         font: $font-medium;
+         width: 95px;
+         height: 32px;
+         border: 0px;
+         color: $main-color;
+         border-radius: 5px;
+
+      }
+      }
+
+      .banner {
+        background: url('../assets1/Object.png');
+        height: 100vh;
+        width: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+       display: flex;
+       align-items: center;
+
+        img{
+          margin: 3rem;
+        }
+        .img-farmer{
+       
+      margin-left: -6rem;
+      margin-bottom: -6rem;
+        }
+     
+
+  }
+    }
+    
+}  
+       
+    

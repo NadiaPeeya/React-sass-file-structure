@@ -1,44 +1,44 @@
-import { SearchOutlined, ShoppingBasket } from '@material-ui/icons';
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Header.scss';
+import logo from '../assets1/Group 11 (1).png';
+
 
 const Header = () => {
     return (
         <div className='header'>
             <nav>
-                <ul className='ul-items'>
-                    <li className='li-items'>
-                        <Link to='/woman'>Woman</Link>
-                        <Link to='/men'>Men</Link>
-                        <Link to='/woman'>Woman</Link>
-                        <Link to='/denim'>Denim</Link>
-                        <Link className='orange' to='/shop'>The Gift Shop</Link>
-                        <Link to='/about'>About</Link>
-                    </li>
-                    </ul>
-                    <div className='logo'>
-                    <Link className='zeniko' to="/">
-                    <h1>Zeniko</h1>
+                <div className='nav-design'>
+                <div className='logo'>
+                    <Link className='zou' to="/">
+                     <img src={logo} alt="" />
                     </Link>
                         
                         </div>
+                <ul className='ul-items'>
+                    <li className='li-items'>
+                        <Link to='/home'>Home</Link>
+                        <Link to='/product'>Product</Link>
+                        <Link to='/team'>Team</Link>
+                        <Link to='/blog'>Blog</Link>
+                        <Link to='/contact'>Contact</Link>
+                    </li>
+                    </ul>
+                </div>
+           
+                 
 
                         <div className="right">
-                            <div className="search">
-                                <SearchOutlined className='search-icon'/>
-                                <button className='sch-btn'>Search</button>
-                            </div>
+                       
                            <div className="right-buttons">
-                            <button>
-                                <Link to="/login">Log In</Link>
-                            </button>  
+
                        
                             <button>
                             <Link to="/sign-up">Sign Up</Link>
                             </button>
 
-                            <ShoppingBasket/>
+                       
                             </div> 
                         </div>
             </nav>

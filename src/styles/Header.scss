@@ -2,33 +2,42 @@
 @import './mixins';
 @import './font';
 
+
 .header {
+    margin-top: 20px;
     position: sticky;
     top: 0;
+  
+  
 
     nav {
       @include flex-center;
       justify-content: space-between;
       height: 4rem;
-      background-color: $main-color;
+      margin-left: 8rem;
+      margin-right: 8rem;
+      .nav-design {
+        @include flex-center;
+        background-color: transparent;
+     
+      }
 
-     .zeniko {
+     .zou {
         text-decoration: none;
       }
 
       .ul-items{
+        margin-left: 2rem;
         list-style: none;
+       
 
         .li-items {
 
              a {
                 text-decoration: none;
-                color: $secondary-color;
+                color: $text-color;
                 margin: 1rem;
-                font-size: 16px;
-            }
-            .orange {
-                color: $orange-color;
+                font-size: $font-normal;
             }
         }
       }
@@ -41,28 +50,14 @@
 
       .right {
         @include flex-center;
-
-        .search {
-            @include flex-center;
-      
-            margin-right: 5rem;
-
-            .search-icon {
-                color: $gray-color;
-                font-size: 20px;
-            }
-        }
-        .sch-btn {
-            background: none;
-            cursor: pointer;
-            border: none;
-
-        }
+ 
       }
       .right-buttons {
         @include flex-center;
         margin-right: 3rem;
-
+        border: 1px solid white;
+        width: 100px;
+        height: 40px;
 
         button {
              margin: 0 1rem;
@@ -74,10 +69,6 @@
                 text-decoration: none;
                 color: $gray-color;
              }
-        }
-
-        .basket {
-            color: $basket-color;
         }
       }
 

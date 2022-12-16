@@ -1,38 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 .main-section {
-  background: linear-gradient(to right bottom, rgba(252, 104, 18, 0.507), rgba(252, 96, 69, 0.363)), url(../assets/main.jpg);
-  height: 80vh;
+  margin-top: -100px;
+  height: 100vh;
   background-size: cover;
   overflow: hidden;
 }
 .main-section .content {
-  margin: 12rem;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.main-section .content h1 {
-  font-size: 4rem;
-  color: rgb(248, 248, 248);
-  text-shadow: 3px 3px 3px rgb(248, 248, 248);
+.main-section .content .content-paragraph {
+  margin-left: 4rem;
+  padding: 4rem;
 }
-.main-section .content button {
-  background: none;
-  padding: 10px 2rem;
-  border-radius: 20px;
-  color: rgb(248, 248, 248);
-  cursor: pointer;
-  font-weight: bolder;
-  border: 1px solid rgb(248, 248, 248);
-  font-size: 16px;
-  margin-top: 1rem;
+.main-section .content .content-paragraph h1 {
+  font-size: 46px;
+  color: #000000;
 }
-.main-section .content button:hover {
-  transform: scale(140%);
-  transition: 1s ease-in-out;
-  color: rgb(0, 0, 0);
-  background-color: rgb(248, 248, 248);
+.main-section .content .content-paragraph p {
+  font-size: 18px;
+  color: #263238;
 }
-.main-section .bottom-text {
-  margin-left: 1rem;
+.main-section .content .content-paragraph .button-design {
+  background-color: #66BB6A;
+  margin-top: 2rem;
+  font: 18px;
+  width: 95px;
+  height: 32px;
+  border: 0px;
+  color: #FFFFFF;
+  border-radius: 5px;
 }
-.main-section .bottom-text p {
-  color: rgb(248, 248, 248);
+.main-section .content .banner {
+  background: url("../assets1/Object.png");
+  height: 100vh;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.main-section .content .banner img {
+  margin: 3rem;
+}
+.main-section .content .banner .img-farmer {
+  margin-left: -6rem;
+  margin-bottom: -6rem;
 }/*# sourceMappingURL=Section.css.map */

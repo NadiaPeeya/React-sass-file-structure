@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+.opportunity {
+  background: url("../assets1/Mask6.PNG");
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+.opportunity .opportunity-texts {
+  padding: 5rem;
+}
+.opportunity .opportunity-texts h1 {
+  margin-top: 10px;
+  font-size: 36px;
+  text-align: center;
+  margin: 1rem;
+  color: #000000;
+}
+.opportunity .opportunity-texts p {
+  text-align: center;
+  font-size: 18px;
+  color: #263238;
+}
+.opportunity .cards {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}/*# sourceMappingURL=Opportunity.css.map */

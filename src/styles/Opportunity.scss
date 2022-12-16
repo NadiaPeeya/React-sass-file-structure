@@ -1,0 +1,317 @@
+@import './colors';
+@import './mixins';
+@import './font';
+
+
+.opportunity{
+
+ background: url('../assets1/Mask6.PNG');
+ height: 100vh;
+ background-repeat: no-repeat;
+
+ .container {
+    width: calc(100% - 10rem);
+    max-width: 50rem;
+    margin: 0 auto;
+ }
+ .container-texts{
+   padding: 5rem;
+    h1{
+        margin-top: 10px;
+        font-size: $font-larger;
+        text-align: center;
+        margin: 1rem;
+        color: $text-color;
+     }
+     p {
+        text-align: center;
+        font-size: $font-medium;
+        color: $regular-text-color;
+        line-height: $line-height;
+     }
+ }
+ .cards{
+
+  
+    @include card-grid(3,1fr);
+    text-align: center;
+
+
+    .single-card{
+
+        
+    background: #FFFFFF;
+    box-shadow: -1px 13px 20px #F0F2F4;
+    border-radius: 5px;
+    text-align: justify;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 1rem;
+    transition: 0.5 ease-out;
+  
+        h3{
+            font-size: $font-medium;
+            line-height: 24px;
+            color: $text-color;
+            text-align: left;
+        }
+        p{
+            font-size: $font-normal;
+            color: $regular-text-color;
+            line-height: $line-height;
+            text-align: left;
+        }
+
+        &:hover{
+            background-color: $secondary-color;
+            h3{
+                color: $main-color;
+            }
+            
+            p{
+                color: $main-color;
+            }
+           
+        }
+    }
+ 
+ }
+
+}
+
+.Invest {
+    .container {
+        width: calc(100% - 10rem);
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+
+     .container-texts{
+       padding: 5rem;
+        h1{
+            margin-top: 10px;
+            font-size: $font-larger;
+            text-align: center;
+            margin: 1rem;
+            color: $text-color;
+         }
+         p {
+            text-align: center;
+            font-size: $font-medium;
+            color: $regular-text-color;
+            line-height: $line-height;
+         }
+     }
+
+     .cards{
+ 
+        text-align: center;
+        padding: 1rem;
+
+
+      @include card-grid(2, 1fr);
+
+         .single-card1 {
+        border-radius: 5px;
+        backdrop-filter: blur(5px);
+        background-image: linear-gradient(180deg, rgba(97, 118, 127, 0.0001) 0%, #324148 100%), url('../assets1/Bitmap\ \(1\).png');
+         background-size: cover;
+        background-blend-mode: screen;
+     
+        width: 400px;
+        height: 390px;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+        .investment-text{
+        
+             text-align: left;
+             margin-left: 5rem;
+             .small-text{
+                margin-top: 39px;
+                height: 24px;
+                top: calc(50% - 24px/2 - 157px);
+                
+                font-family: $font-style;
+                font-style: $font-normal;
+                font-weight: $font-weight-normal;
+                font-size: $font-small;
+                line-height: $line-height;
+                
+                letter-spacing: 2.8px;
+                
+                color: $secondary-color;
+          
+            }
+    
+    
+            .rectangle{
+              
+                height: 4px;
+                width: 56px;
+              
+                margin-top: -1rem;
+                
+                background: #FFFFFF;
+                border-radius: 2px;
+            }
+       h3{
+     
+        left: 72px;
+        margin-top: 2rem;
+        
+        
+        font-family: $font-normal;
+        font-style: $font-normal;
+        font-weight: $font-weight-high;
+        font-size: $font-large;
+        line-height: $extra-line-height;
+        color: $main-color;
+        
+       }
+       p{
+        left: 14.06%;
+        right: 37.5%;
+        top: 57.21%;
+        bottom: 31.73%;
+        
+        font-family: $font-normal;
+        font-style: $font-normal;
+        font-weight: $font-weight-normal;
+        font-size: $font-normal;
+        line-height: $line-height;
+        color: $main-color;
+        
+       }
+       .learn-more-btn{
+        
+
+        button{
+            // position: absolute;
+            left: 14.06%;
+            right: 46.88%;
+            top: 75%;
+            bottom: 13.46%;
+            color: $secondary-color;
+            padding: 0.5rem;
+            line-height: 12px;
+            height: 48px;
+            width: 200px;
+            left: 72px;
+            top: 312px;
+            border-radius: 0px;
+            border: 0px;
+            
+}
+       }
+      
+
+        }
+
+      
+ }
+         .single-card2 {
+        border-radius: 5px;
+        backdrop-filter: blur(5px);
+        background-image: linear-gradient(180deg, rgba(97, 118, 127, 0.0001) 0%, #324148 100%), url('../assets1/Bitmap.png');
+         background-size: cover;
+        background-blend-mode: screen;
+     
+        width: 400px;
+        height: 390px;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+        .investment-text{
+        
+             text-align: left;
+             margin-left: 5rem;
+             .small-text{
+                margin-top: 39px;
+                height: 24px;
+                top: calc(50% - 24px/2 - 157px);
+                
+                font-family: $font-style;
+                font-style: $font-normal;
+                font-weight: $font-weight-normal;
+                font-size: $font-small;
+                line-height: $line-height;
+                
+                letter-spacing: 2.8px;
+                
+                color: $secondary-color;
+          
+            }
+    
+    
+            .rectangle{
+              
+                height: 4px;
+                width: 56px;
+              
+                margin-top: -1rem;
+                
+                background: #FFFFFF;
+                border-radius: 2px;
+            }
+       h3{
+     
+        left: 72px;
+        margin-top: 2rem;
+        
+        
+        font-family: $font-normal;
+        font-style: $font-normal;
+        font-weight: $font-weight-high;
+        font-size: $font-large;
+        line-height: $extra-line-height;
+        color: $main-color;
+        
+       }
+       p{
+        left: 14.06%;
+        right: 37.5%;
+        top: 57.21%;
+        bottom: 31.73%;
+        
+        font-family: $font-normal;
+        font-style: $font-normal;
+        font-weight: $font-weight-normal;
+        font-size: $font-normal;
+        line-height: $line-height;
+        color: $main-color;
+        
+       }
+       .learn-more-btn{
+        
+
+        button{
+            // position: absolute;
+            left: 14.06%;
+            right: 46.88%;
+            top: 75%;
+            bottom: 13.46%;
+            color: $secondary-color;
+            padding: 0.5rem;
+            line-height: 12px;
+            height: 48px;
+            width: 200px;
+            left: 72px;
+            top: 312px;
+            border-radius: 0px;
+            border: 0px;
+            
+            
+}
+       }
+      
+
+        }
+
+      
+ }
+   
+     }
+    }
